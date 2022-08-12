@@ -65,13 +65,13 @@ roslaunch widowx_arm_controller widowx_arm_controller.launch
 ### Commanding the controller 
 
 ```
-rostopic pub /joint_1/command std_msgs/Float64 "data: 0.0" 
-rostopic pub /joint_2/command std_msgs/Float64 "data: 0.0" 
-rostopic pub /joint_3/command std_msgs/Float64 "data: 0.0" 
-rostopic pub /joint_4/command std_msgs/Float64 "data: 0.0" 
-rostopic pub /joint_5/command std_msgs/Float64 "data: 0.0" 
-rostopic pub /gripper_revolute_joint/command std_msgs/Float64 "data: 0.0" 
-rostopic pub /gripper_prismatic_joint/command std_msgs/Float64 "data: 0.0"
+rostopic pub -1 /joint_1/command std_msgs/Float64 "data: 0.0" 
+rostopic pub -1 /joint_2/command std_msgs/Float64 "data: 0.0" 
+rostopic pub -1 /joint_3/command std_msgs/Float64 "data: 0.0" 
+rostopic pub -1 /joint_4/command std_msgs/Float64 "data: 0.0" 
+rostopic pub -1 /joint_5/command std_msgs/Float64 "data: 0.0" 
+rostopic pub -1 /gripper_revolute_joint/command std_msgs/Float64 "data: 0.0" 
+rostopic pub -1 /gripper_prismatic_joint/command std_msgs/Float64 "data: 0.0"
 ```
 
 ### Visualizing the state
